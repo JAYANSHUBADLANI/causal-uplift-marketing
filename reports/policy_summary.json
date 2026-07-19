@@ -1,0 +1,35 @@
+{
+  "synthetic": false,
+  "margin_per_conversion": 25.0,
+  "cost_per_email": 0.1,
+  "k_star_pct": 35,
+  "profit_at_k_star": 1065.3960197562567,
+  "profit_ci": [
+    -36.466342823327395,
+    2238.4092318035086
+  ],
+  "profit_blanket": -948.7905419809274,
+  "profit_random_at_k_star": -332.07668969332457,
+  "policies": [
+    {
+      "policy": "e-mail no one",
+      "n_emailed": 0,
+      "profit": 0.0
+    },
+    {
+      "policy": "blanket e-mail (k=100%)",
+      "n_emailed": 42693,
+      "profit": -948.7905419809274
+    },
+    {
+      "policy": "random 35%",
+      "n_emailed": 14943,
+      "profit": -332.07668969332457
+    },
+    {
+      "policy": "top 35% by uplift (optimal)",
+      "n_emailed": 14943,
+      "profit": 1065.3960197562567
+    }
+  ]
+}

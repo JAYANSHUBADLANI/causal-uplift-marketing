@@ -1,0 +1,50 @@
+{
+  "synthetic": false,
+  "n_obs": 21313,
+  "n_treated": 10018,
+  "benchmark": {
+    "description": "Women's e-mail vs control ATE on visit, the RCT ground truth used in Part 2",
+    "ate": 0.045233106587052985,
+    "ci_lo": 0.03895170410752685,
+    "ci_hi": 0.0515530937772964
+  },
+  "methods": {
+    "naive difference in means": {
+      "estimate": 0.07606117752984866,
+      "ci_lo": 0.06706135720745329,
+      "ci_hi": 0.08506099785224402
+    },
+    "regression adjustment (OLS, HC1)": {
+      "estimate": 0.044493977433303626,
+      "ci_lo": 0.03419492384137199,
+      "ci_hi": 0.054793031025235264
+    },
+    "IPW (stabilised, trimmed)": {
+      "estimate": 0.04629462567711687,
+      "ci_lo": 0.036959632472721306,
+      "ci_hi": 0.05765437833735871
+    },
+    "1:1 NN matching (ATT)": {
+      "estimate": 0.05536124712701109,
+      "ci_lo": 0.04586732047055811,
+      "ci_hi": 0.06485517378346407
+    },
+    "AIPW (doubly robust, cross-fit)": {
+      "estimate": 0.046449259478847295,
+      "ci_lo": 0.03498150028567713,
+      "ci_hi": 0.057917018672017456
+    }
+  },
+  "matching_detail": {
+    "estimate": 0.05536124712701109,
+    "ci_lo": 0.04586732047055811,
+    "ci_hi": 0.06485517378346407,
+    "n_matched": 10007,
+    "pct_treated_matched": 99.89019764424036
+  },
+  "balance": {
+    "max_smd_unadjusted": 0.9760932026567501,
+    "max_smd_ipw": 0.017683318624655754,
+    "max_smd_matched": 0.04160926896585109
+  }
+}

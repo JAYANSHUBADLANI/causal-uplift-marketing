@@ -1,0 +1,52 @@
+{
+  "synthetic": false,
+  "cell": {
+    "treatment": "womens",
+    "outcome": "visit",
+    "n": 42693,
+    "treated_share": 0.5009486332654065
+  },
+  "metrics": [
+    {
+      "learner": "S-learner",
+      "qini_test": 54.84314032584041,
+      "qini_oof_train": 83.97427131944289,
+      "uplift_at_10": 0.08492264896783955,
+      "uplift_at_20": 0.07956640590477873,
+      "uplift_at_30": 0.07517144435777431
+    },
+    {
+      "learner": "X-learner",
+      "qini_test": 31.161939671200855,
+      "qini_oof_train": 65.3932246145763,
+      "uplift_at_10": 0.05584944296823577,
+      "uplift_at_20": 0.06267794461778473,
+      "uplift_at_30": 0.07175848678821709
+    },
+    {
+      "learner": "T-learner",
+      "qini_test": 23.700548389577875,
+      "qini_oof_train": 73.55396808123487,
+      "uplift_at_10": 0.044040718224233,
+      "uplift_at_20": 0.05686365921660039,
+      "uplift_at_30": 0.059680717653973564
+    },
+    {
+      "learner": "class-transformation",
+      "qini_test": 3.902192628051637,
+      "qini_oof_train": 40.77882076933804,
+      "uplift_at_10": 0.049198414403155574,
+      "uplift_at_20": 0.0416342395851934,
+      "uplift_at_30": 0.054896466323522575
+    }
+  ],
+  "best_learner": "S-learner",
+  "runner_up": "X-learner",
+  "qini_diff_bootstrap": {
+    "delta": 23.565026013217583,
+    "ci_lo": 9.348359730287523,
+    "ci_hi": 37.397372909672896,
+    "p_better": 1.0
+  },
+  "overall_ate_visit": 0.045233106587052985
+}
