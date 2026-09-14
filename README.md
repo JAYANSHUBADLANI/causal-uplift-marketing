@@ -122,8 +122,9 @@ $$\hat\psi_i = \hat m_1(X_i) - \hat m_0(X_i) + \frac{W_i(Y_i - \hat m_1(X_i))}{\
 \*Matching estimates the **ATT**: the effect among the (selected,
 engaged) treated, which Part 1's heterogeneity says is genuinely larger,
 an estimand difference, not an estimator failure. Diagnostics
-(`fig_obs_overlap/love/weights/methods.png`): IPW weighting collapses the
-max |SMD| from 0.98 to 0.02; matching pairs 99.9% of treated within a
+(`reports/figures/` holds `fig_obs_overlap.png`, `fig_obs_love.png`,
+`fig_obs_weights.png` and `fig_obs_methods.png`): IPW weighting collapses
+the max |SMD| from 0.98 to 0.02; matching pairs 99.9% of treated within a
 0.2-SD caliper.
 
 **The narrative:** when you cannot randomise, selection-on-observables
